@@ -40,8 +40,8 @@ timestamped_folder = None
 
 # load demand array (jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec)
 #load_demand = [10000, 12000, 20000, 25000, 32000, 38000, 40000, 35000, 28000, 14000, 12000, 11000 ]  # Large scale load demand in kWh
-#load_demand = [1500, 2200, 3000, 3800, 4300, 5200, 6700, 7300, 6400, 5800, 4600, 3100 ] # Small scale load demand in kWh
-load_demand = [4000, 5500, 7000, 9000, 11000, 12500, 14000, 11000, 7500, 6800, 5700, 3600]
+load_demand = [1500, 2200, 3000, 3800, 4300, 5200, 6700, 7300, 6400, 5800, 4600, 3100 ] # Small scale load demand in kWh
+#load_demand = [4000, 5500, 7000, 9000, 11000, 12500, 14000, 11000, 7500, 6800, 5700, 3600]
 #load_demand = {}
 grid_rate = 0.01  # Default grid rate
 

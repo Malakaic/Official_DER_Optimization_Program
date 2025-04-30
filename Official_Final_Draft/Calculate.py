@@ -11,8 +11,9 @@ import gurobi_multi_objective
 import config
 import datetime
 import pandas as pd
-#from Inputs import InputPage
 
+
+"""
 # Example usage
 configurations = [
     {'solar': 5, 'solar_panels': 20, 'wind': 10, 'wind_turbines': 4, 'battery': 20, 'battery_units': 10, 'inverter': 5, 'inverters': 1, 'price': 10000},
@@ -20,6 +21,7 @@ configurations = [
     {'solar': 10, 'solar_panels': 40, 'wind': 15, 'wind_turbines': 6, 'battery': 30, 'battery_units': 15, 'inverter': 10, 'inverters': 2, 'price': 20000},
     {'solar': 12, 'solar_panels': 48, 'wind': 18, 'wind_turbines': 7, 'battery': 35, 'battery_units': 18, 'inverter': 12, 'inverters': 2, 'price': 25000}
 ]
+"""
 
 class Calculate_Button(tk.Frame):
     def __init__(self, parent,location_page):
@@ -131,9 +133,10 @@ class Calculate_Button(tk.Frame):
 
         # Close the project name window
         self.project_name_window.destroy()
+        
+        self.perform_calculations()  # Call the perform_calculations method to proceed with calculations
+    
 
-        # Proceed with the calculations
-        self.perform_calculations()
 
     def perform_calculations(self):
 

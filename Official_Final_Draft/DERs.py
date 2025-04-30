@@ -189,6 +189,7 @@ class Der_menu_page (tk.Frame):
                                     selected_values = list(tree.item(selected_item, "values"))  # Convert tuple to list
                                     print(f"Selected PV Configuration: {selected_values}")
 
+
                                     # Populate the PV input fields with the selected values
                                     pv_name_entry.delete(0, tk.END)
                                     pv_name_entry.insert(0, selected_values[0])  # Name

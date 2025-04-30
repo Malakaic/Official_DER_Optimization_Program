@@ -182,7 +182,7 @@ def optimization(self):
     average_turbine_cost = total_turbine_hourly_cost / len(power_data) if len(PowerTurbine) > 0 else 0
     average_pv_cost = total_pv_hourly_cost / len(power_data) if len(PowerPV) > 0 else 0
 
-    # levelized average grid cost
+    #  average grid cost
     grid_cost = gp.quicksum(grid_energy[i] * costgrid for i in range(len(power_data)))/len(power_data)
 
     total_yearly_cost = total_turbine_hourly_cost + total_pv_hourly_cost + gp.quicksum(grid_energy[i] * costgrid for i in range(len(power_data)))

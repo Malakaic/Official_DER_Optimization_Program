@@ -29,17 +29,7 @@ def solar_function(self, latitude, longitude, pv_name_user, system_capacity_user
     pv_name = pv_name_user
     system_capacity = system_capacity_user
     module_type = module_type_user
-
-    # Convert module type to a numeric value for the dictionary
-    """
-    module_type_value = 0
-    if module_type == "Monocrystalline":
-        module_type_value = 0
-    elif module_type == "Polycrystalline":
-        module_type_value = 1
-    elif module_type == "Thin-Film":
-        module_type_value = 2
-    """                    
+                
     azimuth = 180  # Azimuth angle in degrees - Required
     tilt = 20  # Tilt angle in degrees - Required
     losses = 10  # System losses as a percentage - Required
